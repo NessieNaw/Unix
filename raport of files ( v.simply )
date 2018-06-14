@@ -1,0 +1,14 @@
+#!/bin/bash
+man bash > plik.txt 
+split -n l/5 plik.txt
+mkdir raporty
+mv x?? raporty
+cd raporty
+ls > raport1
+shuf raport1 > raport2
+cat $( cat raport1 ) > plik1
+diff ../plik.txt plik1
+#diff $1 plik1
+cat $( shuf raport1 ) > plik2
+#diff $1 plik2
+diff ../plik.txt plik2
