@@ -1,0 +1,22 @@
+# $1 warianty
+# $2 elemrnty
+
+sort -t ',' "$1" | nl | tr '\t' ',' | tr -d ' '  > w_ponumerowane
+sort -t ',' -k 4 $2 > e_posortowane
+join -t ',' -1 2 -2 4 w_ponumerowane e_posortowane | sort -r -t ',' -k 5 > plik1
+a=$( wc -l < plik1 )
+ile=$( echo $a*25/100 | bc )
+echo ---$ile--- 
+head -n $ile plik1 | sort -t ',' -n -k 2 > wy
+echo "*****"
+cat wy
+echo "*****"
+nl -s, wy > wywy
+join -t ',' -j 1 -o 1.6,1.5,1.8  wywy  wywy | tr ',' '\t'  > to
+cat to
+rm w_ponumerowane e_posortowane plik1 wy 
+
+
+
+
+

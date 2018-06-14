@@ -1,0 +1,27 @@
+Dane są dwa pliki w formacie CSV:
+  1) "elementy" o kolumnach:
+    * rocznik,
+    * rozmiar,
+    * waga,
+    * identyfikator,
+  2) "warianty"
+    * identyfikator, 
+    * klasa, 
+    * kolor, 
+    * cena,
+    * ilość.
+Pole 'identyfikator' wiąże logicznie informacje w obu plikach.
+
+Zadanie. Napisać skrypt, który dla powyższych danych wygeneruje raport
+składający się z kolumn:
+    * cena,
+    * kolor,
+    * rocznik,
+obejmujący 25% wpisów z pliku "warianty".
+Wybrane mają być wiersze o największych cenach i wyświetlone w takiej samej
+kolejności, w jakiej występują w pliku "warianty". 
+Kolumny mają być rozdzielone znakiem tabulacji ('\t').
+ 
+Uwaga. Jeżeli skrypt korzysta z plików tymczasowych, to po zakończeniu
+działania powinien je usunąć.
+
