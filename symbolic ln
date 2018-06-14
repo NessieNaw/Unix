@@ -1,0 +1,16 @@
+#!/bin/bash
+mkdir {A,B,C}{1,2}{a,b}
+touch {A,B,C}{1,2}
+for zm in *; do
+  if [ -d "$zm" ]; then
+   (
+      zm1=${zm::2}
+      zm2=${zm:1:3} 
+      cd "$zm"
+      ln -s "../$zm1" "$zm2"
+#ln -s "$zm1" "$zm2" // niepoprawne wiaznia
+
+   )
+  fi
+done
+# creates the directories and files, then making ln -s to the directories at higher lvl in lower lvl of the tree
