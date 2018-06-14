@@ -1,0 +1,14 @@
+#$1 - Mansfield
+
+csplit -z -f 'Chapter_' "$1" '/^\s*Chapter */' '{*}'
+
+sed '/^ *$/d' "Chapter_00" > c1 
+
+sed -r '1 i\ /(------){13}/' "Chapter_00" > c2  
+
+sed -e "\$a /(------){13}/$" "Chapter_00" > c3
+
+# czy mozna zrobic echo ------ i zapetlic je na 13 razy
+# czy mozna zmusic echo do wyswietlania reg expr
+# czy da sie uzyc chapter ?? zamiast konkretnej liczby i w przypadku rzekierowania czy mozna i trzeba jakims reg expr zrobic tak zeby pliki wynikowe tez mialy takie numery jak maja te pliki wejsciowe ( cos tak jak to zostalo zrobione w csplit, w sensie ze sa te chaptery 0 1 2 i zeby tez miec pliki c1 2 3 z tego )
+# czy mozna wyswietlic seq 13 - miec 13 liczb w kolumnie i potem zrobic podstawienie za kazda liczbe [012345...] wstawic ------ i miec 13 razy to zrbione i w miedzy czasie usunac znaki przejscia do nowej linii, czy to w ogole ma sens, bo pewnie da sie duzo prosciej ...

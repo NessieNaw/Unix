@@ -1,0 +1,8 @@
+
+1. Za pomocą csplit podzielić plik Mansfield na pliki z osobnymi rozdziałami.
+2. Za pomocą sed wykonać obie następujące operacje:
+   usunięcie pustych linii, wstawienie linii składających sie z 78 znaków '-'.
+   Te drugie należy wstawić w nasępujących miejscach:
+   - przed linią zawierająca 'Chapter',
+   - po ostatniej linii tekstu.
+   
