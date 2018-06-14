@@ -1,0 +1,16 @@
+
+[ -v TARTMP ] && TMP=$TARTMP || TMP="${RANDOM}_$$"
+echo $TMP
+TMP=---
+
+TMP=${TARTMP:-${RANDOM}_$$}
+echo $TMP
+
+exit
+
+
+mkdir "${TMP}"
+tar -x "$1" -C "${TMP}"
+find -x "${TMP}" ! -type d -delete
+tar -cf "$2" -C "${TMP}" .
+

@@ -1,0 +1,7 @@
+Zadanie 3 (Przeglądanie katalogów)
+Ilość punktów: 4 
+
+Napisać skrypt, który dla każdego pliku regularnego w zadanym drzewie,
+wyznacza i wypisuje ile procentowo zajmuje on miejsca, względem wszystkich
+plików w tym drzewie.
+

@@ -1,0 +1,30 @@
+Zadanie 2 (tar i zmienne środowiskowe)
+Łączna ilość punktów: 5
+
+
+Część 1 (3 punkty)
+
+Napisać skrypt, który wszystkie pliki regularne, znajdujące się w zadanym
+archiwum tar, umieści w jednym katalogu. (Nie należy przejmować się, gdy 
+pliki będą miały takie same nazwy i będą się nadpisywały.) Jeżeli jest
+określona (i nie pusta) zmienna środowiskowa 'TARDST', to wskazuje ona
+katalog, do którego mają trafić znalezione pliki (w razie potrzeby katalog 
+ten należy utworzyć). W przeciwnym wypadku pliki mają trafić do bieżącego
+katalogu roboczego.
+Skrypt ma przyjmować jeden parametr: ścieżkę do archiwum źródłowego.
+
+
+Część 2 (2 punkty)
+
+Napisać skrypt, przyjmujący trzy parametry:
+ - ścieżkę do archiwum źródłowego,
+ - ścieżkę do katalogu na wyniki tymczasowe,
+ - ścieżkę do archiwum wynikowego.
+Skrypt ten ma wykonać skrypt z części 1, a następnie znalezione pliki spakować
+do archiwum wynikowego.
+
+Uwaga.
+Skrypt powinien sprawdzić, czy ma odpowiednią ilość argumentów.  A jeżeli
+ilość jest zła, to wypisać informację, jakich argumentów oczekuje.
+
+

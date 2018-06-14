@@ -1,0 +1,24 @@
+Zadanie 1 (Wyrażenia logiczne)
+Łączna ilość punktów: 5
+
+Wykorzystując funkcje [...] (lub [[...]]) oraz operatory && i ||, przygotować
+dwa skrypty o następujących właściwościach.
+Każdy ze skryptów przyjmuje argument i wykonuje na nim jedną z dwóch operacji:
+(a)
+  i.   wypisuje komunikat ,,część A'',
+  ii.  próbuje wykonać program 'cat' na argumencie,
+(b)
+  i.   wypisuje komunikat ,,część B'',
+  ii.  próbuje wykonać operację wejścia do katalogu ('cd') wskazanego przez
+       argument.
+W obu przypadkach strumień błędów ma być przekierowany do pliku /dev/null.
+
+
+Skrypt 1 (2 punkty).
+        Jeżeli argument jest katalogiem, to wykonuje (b).
+        W przeciwnym wypadku wykonuje (a).
+
+Skrypt 2 (3 punkty). 
+        Jeżeli argument jest katalogiem, to wykonuje (a).
+        W przeciwnym wypadku wykonuje (b).
+

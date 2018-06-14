@@ -1,0 +1,28 @@
+Zadanie 2 (tar i zmienne środowiskowe)
+Łączna ilość punktów: 5
+
+
+Część 1 (3 punkty)
+
+Napisać skrypt, który na podstawie zadanego archiwum tar utworzy nowe,
+zawierające wyłącznie katalogi. Jeżeli jest określona (i nie pusta) zmienna
+środowiskowa 'TARTMP', to archiwum źródłowe ma być rozpakowane do katalogu
+przez nią określonego (w razie potrzeby katalog ten należy utworzyć).
+W przeciwnym wypadku archiwum ma być rozpakowane w bieżącym katalogu roboczym.
+
+Skrypt ma przyjmować dwa parametry: ścieżki do archiwów źródłowego
+i wynikowego.
+
+
+Część 2 (2 punkty)
+
+Napisać skrypt, przyjmujący trzy parametry:
+ - ścieżkę do archiwum źródłowego,
+ - ścieżkę do katalogu na wyniki tymczasowe,
+ - ścieżkę do archiwum wynikowego,
+który wywołuje skrypt z części 1. 
+
+Uwaga.
+Skrypt powinien sprawdzić, czy ma odpowiednią ilość argumentów.  A jeżeli
+ilość jest zła, to wypisać informację, jakich argumentów oczekuje.
+

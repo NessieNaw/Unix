@@ -1,0 +1,16 @@
+#krok1: znalezc wszystkie pliki
+
+find -type f -exec stat -c "%s %n" {} \; > wyniki
+#echo $wyniki
+#echo " -------------- "
+#krok 2: wyciecie nazw
+#cut -d " " -f 1 $wyniki
+SUM=$(cut -d " "  -f 1 wyniki | paste -s -d "+" | bc )
+echo $SUM
+#krok 3: liczyc po kolei rozmiary plikow
+(while read rozmiar nazwa; do
+p="scale=10; $rozmiar/$SUM"
+echo "$nazwa: $rozmiar, $( echo $p | bc )%"
+done < wyniki)
+#$z=$( echo "scale=2; $nazwa/$SUM" | bc )
+

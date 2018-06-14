@@ -1,0 +1,8 @@
+Zadanie 3 (Przeglądanie katalogów)
+Ilość punktów: 4 
+
+Napisać skrypt, który wyznacza średnią długość ścieżek prowadzących do
+katalogów znajdujących się w zadanym drzewie.  Następnie skrypt ma dla 
+każdego katalogu wypisywać o ile procent odbiega jego długość od średniej. 
+Na opisanie ,,dłuższy''/,,krótszy'' można użyć znaków ,,+''/,,-''.
+

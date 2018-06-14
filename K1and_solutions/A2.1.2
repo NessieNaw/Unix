@@ -1,0 +1,6 @@
+TMP=$RANDOM_$$
+mkdir "${TMP}"
+tar -x "$1" -C "${TMP}"
+cd "$1}; find -type d > nazwy
+tar -cf "$2" -T --no-recursion nazwy
+
