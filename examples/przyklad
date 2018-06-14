@@ -1,0 +1,14 @@
+skrypt przyjmuje parametr sciezka do pliku i ma sprawdzic czy w srodku jest wyrazenie refularne parameterem nieskonczenie wielka ilosdc parametrow wypisacz zcy blad czy nie jest plikiem albo blad nie ma uprawdnien, albo blad bo nie zawiera takiego lancucha znakow
+
+
+skrypt,ktory :
+dowolna ilosc patamrtro wkazdy parametr tzrba spawdzic czy jest plikeim reg czy kat jesli czyms innym to nas to nie interesuje, jezeli kat to szukamy w nim wszyskich plkiw regularnych ale nie glebiej (min mazx depth albo po prostu *), wszystkie te rzeczy umiecic w tanlicy  - uzyskac tablice gfzi sa same sciezki plikow łacznie z plikami ktore nie sa katagogami a sa podanie jako paramerty wejsciowe,  next krok - posortowac  wzglede ilosci znakow ( chyba -m ) wypisac w kolejnosci rosnace jilos znalow oraz  ale wypisac pozycje w tablicy nazwa - pozycja w tablicy - ilosc znakow ( pozycja z poprzedniej tablicy ) nowa tablica odzwiercedialaca posortowanie ma zaweirac tylko indeksy do tablicy niepostortowaniej (arg sort) 
+
+napisac skrypt który: czy plik jest plikiem i czy ma wsobie wzorze, któ©y jest pierwszym parametrem wywołania 
+ 
+
+przyklady na wzorce: wszystkie slowa krote w sorkdku maja dwie samogloski natomiast srodej jest okreslony ze bez pierwszego i ostaniego znaku 
+
+nastepnei jest niemniej niz 3 slowa ktore zawiearaja te sama spolgosle w lini 
+
+ jeden blok kolo drugiego bloku itp

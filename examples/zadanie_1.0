@@ -1,0 +1,31 @@
+
+
+TAB=( )
+
+for zm in "$@"; do
+  
+  if [ -f "$zm" ]; then
+	tmp=$( dirname "$zm" )
+	TAB+=( "$tmp" )
+  elif  [ -d "$zm" ] ; then
+	for plik in "$zm"/* ; do
+		[[ "$plik" = "$zm/*" || -d "$plik" ]] && continue
+		tmp=$( dirname "$plik" )
+		TAB+=( "$tmp" )
+	done
+  fi
+done
+for e in  "${TAB[@]}" ; do echo -n "+$e+ " ; done ; echo
+
+
+WYNIK=TMP_$$_$RANDOM
+for  idx in "${!TAB[@]}" ; do
+   echo "$idx $( echo -n ${TAB[idx]} | wc -m )"
+done > $WYNIK
+
+SORTED=( $( sort -nt' ' -k2,2 $WYNIK | cut -d' ' -f1 ) ) 
+echo ${SORTED[@]}
+
+
+
+

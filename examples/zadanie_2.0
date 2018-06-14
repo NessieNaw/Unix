@@ -1,0 +1,2 @@
+
+[ -f "$2" ]&& { grep -n -E --color "$1" "$2" ; } || { echo to nie jest plik ;}

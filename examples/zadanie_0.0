@@ -1,0 +1,31 @@
+
+# $1 - wyrażenie regularne
+# $2 ... - pliki
+
+REG=$1
+shift
+for plik in "$@" ; do
+  grep "$REG" "$plik" >& /dev/null && echo "$plik trafiony" \
+       || echo "-- blah --"
+done
+
+#
+#if [ -f "$1" ] ;then 
+#	
+#	[ cat "$1" ]&& { [ cat "$1" | grep -E -x  "wyr_reg"  > plik_z_grepa ]&&{echo plik_z_grepa;} ||{ echo "nie ma wyrazenia " ;};}||{ echo "nie ma uprawnien";}
+#fi
+#else 
+#	echo "blad ! $1 nie jest plikiem"
+#	
+
+#
+#
+#sdfgueghhtrhtrg
+#...............bla......
+#...............bla....
+#...............bla........
+#...............bla...
+#hwtrtttrhtrhhrbblatrgtrg
+#trgtrgtgtrghtrhtrhtrhtrhtrhgtrgtr
+#gwtgtrgtrgtrgtgtr
+#
