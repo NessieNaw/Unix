@@ -1,0 +1,11 @@
+
+plik=$( cat "$1" | tr ',' '.' | tr -s '[:blank:]' '\n' )
+#echo "$plik"
+ilosc=$( echo "$plik" | wc -l )
+#echo $ilosc
+suma=$( echo "$plik" | tr '\n' '+' )0   
+#echo $suma
+SUM=$( echo "$( echo "$suma" | bc )" )
+aver="scale=2; $SUM/$ilosc"
+echo "srednia wynosi: $( echo $aver | bc )"
+

@@ -1,0 +1,9 @@
+Napisać skrypt, który korzystając z programu bc, wyznacza średnią arytmetyczną 
+z liczb umieszczonych w pliku przekazanym jako parametr.
+
+Plik z danymi zawiera dowolną ilość liczb, rozdzielanych dowolnymi kombinacjami
+białych znaków. Plik może zawierać dowolną ilość wierszy, a w każdym wierszu
+może być dowolna ilość liczb.
+Liczby są zmiennoprzecinkowe, ale do oddzielania części ułamkowej może być
+użyty zarówno przecinek jak i kropka.
+
