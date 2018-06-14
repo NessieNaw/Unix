@@ -1,0 +1,8 @@
+skrypy ktory przegladnie zadany zawartosc podanego katalogu i wypisze ifo o plikach. sciezka - parametr wejciowy 
+przypadki - sciezka do katalogu jest xle podana
+- katalog jest pusty
+wypisane wyniki zwrocone przez stat zgodnie z formatem statfmp lub nazwa ozmiat i czas modyfikacji
+
+
+napisać skrypt który przeglądnie zadany katalof i wypisze informacje o plikach w nim zawartych.Ścieżka ma być podana jako parametr wywołania. Do przeglądania zawartości katalogu należy użyć pętli for. Należy uwzględnić przypadki, kiedy ścieżka jest niepoprawnie podana lub katalog jest pusty.
+Dla każdego pliku mają być wypisane wyniki zwrócone przez progam stat, zgodnie z formatym określonym przez zmienną środowuskową STATFMP, Jeśli STATFMP nie jest określona lub jest pusta to przyjmowany jest format: nazwa pliku, rozmiar w bajtach, data ostatniej modyfikacjiidfbweibfiebufiebfi

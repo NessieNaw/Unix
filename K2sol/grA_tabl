@@ -1,0 +1,28 @@
+#-------------------------------------------------------------------
+#  wersja z tablicą
+#-------------------------------------------------------------------
+
+#[ -v "STATFMP" ]&& { stat -c "STATFMP" "$x" ;} || { stat -c "%n %s %y "$x" ;}
+FMT=${STATFMP:-"%n %s %y" }
+T=( "$1"/* )
+echo ${#T[*]}
+
+for ind in ${!T[*]} ; do
+  echo $ind, ${T[ind]}
+done
+
+if [[ "$T{[0]}" = "$1/*" ]] ; then
+  echo pusty
+fi
+
+for elem in "${T[@]}" ; do 
+   stat -c "$FMT" "$elem"   
+done
+
+
+
+
+
+#for x in "$1"; do
+#[ -v "STATFMP" ]&& { stat -c "STATFMP" "$x" ;} || { stat -c "%n %s %y "$x" ;}
+#done

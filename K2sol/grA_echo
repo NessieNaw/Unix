@@ -1,0 +1,33 @@
+
+#echo $1
+#KAT="$1"/*
+ #
+#echo $1
+#KAT="$1"/*
+#echo $1
+#KAT="$1"/*
+
+#echo 1, $1/*
+#echo $1
+#echo ---
+#echo 2, "$1/*"
+#echo ---
+#echo 3, "$1"/*
+#echo ---
+
+echo "$KAT" = "$1/*" 
+
+
+#[ "$KAT" = "$1/*" ] && { echo pusty ; exit 0 ; }
+
+#echo nie pusty
+
+FMT=${STATFMT:-"%n %s %y"}
+
+for plik in "$1"/* ; do
+   if [[ "$plik" = "$1/*" ]] ; then
+        echo pusty
+#        exit 0
+   fi
+   stat -c "$FMT" "$plik"   
+done
